@@ -1,0 +1,32 @@
+[
+  {
+    "id": "blade-dancer",
+    "name": "Kılıç Dansçısı",
+    "summary": "Hızlı vuruşlar ve çevik hareketlerle yakın dövüş uzmanı.",
+    "abilities": [
+      { "id": "whirl", "name": "Girdap", "description": "360° dönüşle alan hasarı." },
+      { "id": "dash", "name": "Atılma", "description": "Hızlıca hedefe yaklaşma." },
+      { "id": "riposte", "name": "Karşı Hamle", "description": "Gelen saldırıyı savuşturup karşı saldırı." }
+    ]
+  },
+  {
+    "id": "arcane-scholar",
+    "name": "Kadim Büyücü",
+    "summary": "Uzak menzilde element büyüleriyle kontrol ve hasar.",
+    "abilities": [
+      { "id": "meteor", "name": "Meteor", "description": "Gökyüzünden dev bir kaya çağırır." },
+      { "id": "ward", "name": "Koruyucu Tılsım", "description": "Etrafta zarar azaltan bir kalkan kurar." },
+      { "id": "blink", "name": "Sıçrama", "description": "Kısa mesafeli anlık ışınlanma." }
+    ]
+  },
+  {
+    "id": "spirit-warden",
+    "name": "Ruh Bekçisi",
+    "summary": "Destek ve iyileştirme odaklı doğa büyüleri.",
+    "abilities": [
+      { "id": "soothe", "name": "Teskin Et", "description": "Müttefikleri iyileştirir." },
+      { "id": "roots", "name": "Köklerle Sar", "description": "Düşmanları yerinde tutar." },
+      { "id": "spirit-guide", "name": "Ruh Rehberi", "description": "Geçici olarak saldırı gücü verir." }
+    ]
+  }
+]
