@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karakter Oluştur</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Yeni Yolculuk</p>
+          <h1>Karakterini Hazırla</h1>
+          <p class="lede">
+            Cinsiyetini ve başlangıç yetenek setini seç, ardından maceraya atıl.
+          </p>
+        </div>
+      </header>
+
+      <main class="panel">
+        <section id="step-gender" class="step active">
+          <div class="step-header">
+            <p class="step-label">Adım 1</p>
+            <h2>Cinsiyet</h2>
+            <p class="muted">Tercihin karakter portreleri ve hitapları için kullanılır.</p>
+          </div>
+          <div class="segmented" role="radiogroup" aria-label="Cinsiyet seçimi">
+            <button class="segment" data-gender="female" aria-pressed="false">Kadın</button>
+            <button class="segment" data-gender="male" aria-pressed="false">Erkek</button>
+            <button class="segment" data-gender="nonbinary" aria-pressed="false">Diğer</button>
+          </div>
+          <div class="actions">
+            <button id="continue-skill" class="primary" disabled>Devam</button>
+          </div>
+        </section>
+
+        <section id="step-skills" class="step">
+          <div class="step-header">
+            <p class="step-label">Adım 2</p>
+            <h2>Başlangıç Yeteneği</h2>
+            <p class="muted">
+              Yalnızca bir yetenek seti seçebilirsin. Seçtikten sonra onay ekranına ilerleyebilirsin.
+            </p>
+          </div>
+          <div id="skill-card-grid" class="card-grid" aria-live="polite"></div>
+          <div class="actions">
+            <button id="back-gender" class="ghost">Geri</button>
+            <button id="confirm-selection" class="primary" disabled>Onayla</button>
+          </div>
+        </section>
+
+        <section id="step-summary" class="step">
+          <div class="step-header">
+            <p class="step-label">Son Adım</p>
+            <h2>Onayla ve Başla</h2>
+            <p class="muted">Aşağıdaki tercihleri kontrol et, gerekirse düzenle.</p>
+          </div>
+          <div class="summary">
+            <div class="summary-row">
+              <div>
+                <p class="muted">Cinsiyet</p>
+                <p id="summary-gender" class="strong">-</p>
+              </div>
+              <button id="edit-gender" class="ghost">Düzenle</button>
+            </div>
+            <div class="summary-row">
+              <div>
+                <p class="muted">Yetenek Seti</p>
+                <p id="summary-skill-name" class="strong">-</p>
+                <p id="summary-skill-desc" class="muted"></p>
+              </div>
+              <button id="edit-skill" class="ghost">Düzenle</button>
+            </div>
+          </div>
+          <div class="actions">
+            <button id="start-button" class="primary">Başla</button>
+          </div>
+          <p id="start-message" class="success" role="status" aria-live="polite"></p>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
