@@ -1,0 +1,28 @@
+{
+  "archetypes": {
+    "caster": {
+      "cooldownReady": { "cue": "tones/arcanic_ready.wav", "volume": 0.75, "tailMs": 180 },
+      "levelUp": { "cue": "tones/ascend_chime.wav", "volume": 0.85, "tailMs": 300 },
+      "hit": { "cue": "impacts/arcane_hit.wav", "volume": 0.7, "tailMs": 90 },
+      "criticalHit": { "cue": "impacts/arcane_crit.wav", "volume": 0.82, "tailMs": 140 }
+    },
+    "assassin": {
+      "cooldownReady": { "cue": "stingers/edge_ready.wav", "volume": 0.78, "tailMs": 160 },
+      "levelUp": { "cue": "stingers/shadow_level.wav", "volume": 0.83, "tailMs": 260 },
+      "hit": { "cue": "impacts/blade_hit.wav", "volume": 0.74, "tailMs": 80 },
+      "criticalHit": { "cue": "impacts/blade_crit.wav", "volume": 0.88, "tailMs": 120 }
+    },
+    "tank": {
+      "cooldownReady": { "cue": "stingers/ward_ready.wav", "volume": 0.76, "tailMs": 200 },
+      "levelUp": { "cue": "stingers/bulwark_level.wav", "volume": 0.84, "tailMs": 320 },
+      "hit": { "cue": "impacts/metal_hit.wav", "volume": 0.78, "tailMs": 110 },
+      "criticalHit": { "cue": "impacts/hammer_crit.wav", "volume": 0.9, "tailMs": 150 }
+    }
+  },
+  "defaults": {
+    "cooldownReady": { "cue": "stingers/ready_ping.wav", "volume": 0.72, "tailMs": 170 },
+    "levelUp": { "cue": "stingers/level_up.wav", "volume": 0.8, "tailMs": 280 },
+    "hit": { "cue": "impacts/default_hit.wav", "volume": 0.7, "tailMs": 85 },
+    "criticalHit": { "cue": "impacts/default_crit.wav", "volume": 0.86, "tailMs": 130 }
+  }
+}
