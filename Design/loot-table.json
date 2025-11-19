@@ -1,0 +1,126 @@
+{
+  "rarityTiers": [
+    {"id": "common", "label": "Common", "tier": 1, "color": "#9e9e9e", "baseDropChance": 0.55},
+    {"id": "rare", "label": "Rare", "tier": 2, "color": "#3a86ff", "baseDropChance": 0.27},
+    {"id": "epic", "label": "Epic", "tier": 3, "color": "#9c27b0", "baseDropChance": 0.12},
+    {"id": "legendary", "label": "Legendary", "tier": 4, "color": "#ffb703", "baseDropChance": 0.06}
+  ],
+  "dropTables": {
+    "normal-enemy": {
+      "description": "Generic trash mobs and dungeon packs.",
+      "rarityWeights": {"common": 0.62, "rare": 0.26, "epic": 0.1, "legendary": 0.02},
+      "items": [
+        {
+          "id": "iron-sword",
+          "name": "Iron Sword",
+          "rarity": "common",
+          "dropChance": 0.12,
+          "minLevel": 1,
+          "classRestriction": ["Warrior", "Paladin"],
+          "roleTags": ["Frontline", "Tank"],
+          "affixes": ["+4-6 Physical Damage", "+2 Strength"]
+        },
+        {
+          "id": "scout-bow",
+          "name": "Scout's Bow",
+          "rarity": "common",
+          "dropChance": 0.1,
+          "minLevel": 1,
+          "classRestriction": ["Ranger", "Rogue"],
+          "roleTags": ["Ranged", "Skirmisher"],
+          "affixes": ["+3-5 Physical Damage", "+3 Agility"]
+        },
+        {
+          "id": "apprentice-wand",
+          "name": "Apprentice Wand",
+          "rarity": "rare",
+          "dropChance": 0.07,
+          "minLevel": 5,
+          "classRestriction": ["Mage", "Priest"],
+          "roleTags": ["Caster", "Support"],
+          "affixes": ["+6-9 Spell Damage", "+4 Intellect", "+2% Mana Regen"]
+        },
+        {
+          "id": "shadow-dagger",
+          "name": "Shadow Dagger",
+          "rarity": "rare",
+          "dropChance": 0.05,
+          "minLevel": 5,
+          "classRestriction": ["Rogue"],
+          "roleTags": ["Assassin"],
+          "affixes": ["+7-10 Physical Damage", "+6 Agility", "+5% Crit Chance"]
+        },
+        {
+          "id": "guardian-armor",
+          "name": "Guardian Armor",
+          "rarity": "epic",
+          "dropChance": 0.03,
+          "minLevel": 10,
+          "classRestriction": ["Warrior", "Paladin"],
+          "roleTags": ["Tank"],
+          "affixes": ["+55 Armor", "+20 Stamina", "+10% Block"]
+        }
+      ]
+    },
+    "boss": {
+      "description": "Dungeon, raid, and world bosses.",
+      "rarityWeights": {"common": 0.35, "rare": 0.32, "epic": 0.22, "legendary": 0.11},
+      "items": [
+        {
+          "id": "flame-spear",
+          "name": "Flamebound Spear",
+          "rarity": "epic",
+          "dropChance": 0.08,
+          "minLevel": 12,
+          "classRestriction": ["Warrior", "Ranger"],
+          "roleTags": ["Bruiser", "Ranged"],
+          "affixes": ["+18-25 Fire Damage", "+12 Strength", "+8 Agility", "+6% Burn Chance"]
+        },
+        {
+          "id": "starlit-robes",
+          "name": "Starlit Robes",
+          "rarity": "epic",
+          "dropChance": 0.07,
+          "minLevel": 12,
+          "classRestriction": ["Mage", "Priest"],
+          "roleTags": ["Caster", "Healer"],
+          "affixes": ["+16 Intellect", "+10 Spirit", "+5% Haste", "+4% Heal Power"]
+        },
+        {
+          "id": "phoenix-plume",
+          "name": "Phoenix Plume",
+          "rarity": "legendary",
+          "dropChance": 0.04,
+          "minLevel": 15,
+          "classRestriction": ["Mage", "Priest"],
+          "roleTags": ["Caster", "Support"],
+          "affixes": ["+25 Spell Damage", "+15 Intellect", "+10% Mana Regen", "On-use: Rebirth (1/30m)"]
+        },
+        {
+          "id": "dragonheart-signet",
+          "name": "Dragonheart Signet",
+          "rarity": "legendary",
+          "dropChance": 0.03,
+          "minLevel": 20,
+          "classRestriction": ["Warrior", "Paladin", "Ranger"],
+          "roleTags": ["Leader", "Frontline"],
+          "affixes": ["+20 Strength", "+25 Stamina", "+8% Damage Reduction", "+5% Party Damage"]
+        },
+        {
+          "id": "echoes-of-the-void",
+          "name": "Echoes of the Void",
+          "rarity": "rare",
+          "dropChance": 0.09,
+          "minLevel": 8,
+          "classRestriction": ["Rogue", "Mage"],
+          "roleTags": ["Assassin", "Caster"],
+          "affixes": ["+12 Shadow Damage", "+8 Agility", "+6 Intellect", "+6% Lifesteal"]
+        }
+      ]
+    }
+  },
+  "sources": {
+    "normal-enemy": ["Forest Wolves", "Bandit Scouts", "Cave Spiders"],
+    "boss": ["Cinder Drake", "Nightfall Matriarch", "Ruinstone Colossus"]
+  }
+}
