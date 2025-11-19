@@ -1,0 +1,28 @@
+{
+  "archetypes": {
+    "caster": {
+      "cooldownReady": { "color": "#4ecdc4", "burst": "sigil", "durationMs": 650 },
+      "levelUp": { "color": "#9b5de5", "burst": "aura_swell", "durationMs": 900 },
+      "hit": { "color": "#f15bb5", "burst": "spark", "durationMs": 180 },
+      "criticalHit": { "color": "#fee440", "burst": "impact_star", "durationMs": 260 }
+    },
+    "assassin": {
+      "cooldownReady": { "color": "#7cffcb", "burst": "slash_glow", "durationMs": 420 },
+      "levelUp": { "color": "#73a9ad", "burst": "smoke_pulse", "durationMs": 820 },
+      "hit": { "color": "#ff6f59", "burst": "slash", "durationMs": 140 },
+      "criticalHit": { "color": "#ffe066", "burst": "shuriken_flash", "durationMs": 220 }
+    },
+    "tank": {
+      "cooldownReady": { "color": "#5bc0be", "burst": "shield_flash", "durationMs": 500 },
+      "levelUp": { "color": "#8d99ae", "burst": "ground_surge", "durationMs": 950 },
+      "hit": { "color": "#ef476f", "burst": "shockwave", "durationMs": 210 },
+      "criticalHit": { "color": "#ffd166", "burst": "hammer_crush", "durationMs": 300 }
+    }
+  },
+  "defaults": {
+    "cooldownReady": { "color": "#56cfe1", "burst": "generic_flash", "durationMs": 450 },
+    "levelUp": { "color": "#90be6d", "burst": "pillar_light", "durationMs": 880 },
+    "hit": { "color": "#f3722c", "burst": "pop", "durationMs": 160 },
+    "criticalHit": { "color": "#ffd60a", "burst": "flare", "durationMs": 240 }
+  }
+}
